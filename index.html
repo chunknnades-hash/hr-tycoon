@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HR Tycoon V4</title>
+
+<style>
+
+body{
+background:#000;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:20px;
+}
+
+.panel{
+max-width:900px;
+margin:auto;
+background:#111;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 25px cyan;
+}
+
+h1{
+color:cyan;
+}
+
+.stat{
+font-size:20px;
+margin:5px;
+}
+
+button{
+background:cyan;
+border:none;
+padding:10px;
+margin:5px;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:white;
+}
+
+.log{
+height:250px;
+overflow-y:auto;
+background:black;
+border:1px solid cyan;
+padding:10px;
+margin-top:20px;
+text-align:left;
+}
+
+hr{
+border:1px solid cyan;
+}
+
+</style>
+</head>
+<body>
+
+<div class="panel">
+
+<h1>🚀 HR TYCOON V4</h1>
+
+<div class="stat">💰 Money: $<span id="money">100</span></div>
+<div class="stat">📱 Apps: <span id="apps">0</span></div>
+<div class="stat">⭐ Reputation: <span id="rep">0</span></div>
+
+<div class="stat">🏢 Office Level: <span id="office">1</span></div>
+
+<hr>
+
+<div class="stat">👨‍💻 Junior Devs: <span id="junior">0</span></div>
+<div class="stat">🧑‍💻 Senior Devs: <span id="senior">0</span></div>
+<div class="stat">🎨 Designers: <span id="designer">0</span></div>
+<div class="stat">📢 Marketing: <span id="marketing">0</span></div>
+<div class="stat">🤖 AI Engineers: <span id="ai">0</span></div>
+<div class="stat">👑 CEOs: <span id="ceo">0</span></div>
+
+<hr>
+
+<button onclick="createApp()">
+📱 Create App ($25)
+</button>
+
+<button onclick="upgradeOffice()">
+🏢 Upgrade Office ($100)
+</button>
+
+<br>
+
+<button onclick="hireJunior()">
+👨‍💻 Junior ($50)
+</button>
+
+<button onclick="hireSenior()">
+🧑‍💻 Senior ($250)
+</button>
+
+<button onclick="hireDesigner()">
+🎨 Designer ($150)
+</button>
+
+<br>
+
+<button onclick="hireMarketing()">
+📢 Marketing ($400)
+</button>
+
+<button onclick="hireAI()">
+🤖 AI Engineer ($1000)
+</button>
+
+<button onclick="hireCEO()">
+👑 CEO ($10000)
+</button>
+
+<br>
